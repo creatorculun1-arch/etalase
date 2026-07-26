@@ -1,0 +1,17 @@
+
+> next-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 547ms
+
+ GET / 200 in 662ms
+⨯ upstream image response failed for https://example.com/headphones.jpg 404
+⨯ upstream image response failed for https://example.com/smartphone.jpg 404
+⨯ upstream image response failed for https://example.com/tshirt.jpg 404
+⨯ upstream image response failed for https://example.com/jeans.jpg 404
+⨯ upstream image response failed for https://example.com/cookbook.jpg 404
+⨯ upstream image response failed for https://example.com/novel.jpg 404
+⨯ upstream image response failed for https://example.com/headphones.jpg 404
