@@ -4,7 +4,6 @@ import { getDb } from '@/lib/db';
 import { products } from '@/db/schema';
 import { eq } from 'drizzle-orm';
 import { revalidatePath } from 'next/cache';
-import { v4 as uuidv4 } from 'uuid';
 
 export async function addProduct(formData: FormData) {
   const db = getDb();
@@ -22,7 +21,7 @@ export async function addProduct(formData: FormData) {
   }
 
   await db.insert(products).values({
-    id: uuidv4(),
+    id: crypto.randomUUID(),
     name,
     slug,
     price,

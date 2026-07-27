@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 import { orders } from '@/db/schema';
-import { v4 as uuidv4 } from 'uuid';
 
 export const runtime = 'edge';
 
@@ -42,7 +41,7 @@ export async function POST(req: Request) {
       }
     }
 
-    const orderId = uuidv4();
+    const orderId = crypto.randomUUID();
 
     await db.insert(orders).values({
       id: orderId,
