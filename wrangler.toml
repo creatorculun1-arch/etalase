@@ -5,9 +5,9 @@ pages_build_output_dir = ".vercel/output/static"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "ecommerce-db"
+database_name = "etalase"
 database_id = "local-db-id"
 
 [[r2_buckets]]
-binding = "BUCKET"
-bucket_name = "ecommerce-bucket"
+binding = "R2etalase"
+bucket_name = "etalase"
